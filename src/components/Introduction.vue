@@ -6,12 +6,12 @@
         </div>
 
         <div class="personal_profile">
-            <svg viewBox="0 0 220 230" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 250 180" xmlns="http://www.w3.org/2000/svg">
                 <path fill="#FF0066" d="M68.3,-25C74,-4.6,54.1,21.2,31.7,35.6C9.3,50,-15.6,52.9,-33.5,41.1C-51.3,29.4,-62,2.9,-55.3,-19C-48.5,-40.8,-24.3,-58,3.5,-59.2C31.3,-60.3,62.6,-45.4,68.3,-25Z" transform="translate(100 100)" />
             </svg>
             <img src="https://assets.website-files.com/5e51c674258ffe10d286d30a/5e535aa1d871310896104715_peep-77.svg" alt="">
             <h1>Backend Developer</h1>
-            <h5>Experience in web development</h5>
+            <h5>Where Logic Meets Limitless Possibilities</h5>
         </div>
     </div>
 </template>
@@ -62,7 +62,7 @@
 
         .personal_profile {
             width: 90%;
-            height: 85vh;
+            height: 100vh;
             position: relative;
 
             svg {
@@ -74,24 +74,25 @@
                 height: 500px;
                 width: auto;
                 position: absolute;
-                left: 140px;
-                top: 100px;
+                left: 200px;
+                top: 220px;
                 background: none;
             }
 
             h1 {
                 font-size: 90px;
                 position: absolute;
-                top: 180px;
-                left: 450px;
+                top: 300px;
+                left: 520px;
                 background: none;
             }
 
             h5 {
-                font-size: 40px;
+                font-size: 35px;
+                font-style: italic;
                 position: absolute;
-                top: 290px;
-                left: 450px;
+                top: 410px;
+                left: 520px;
                 background: none;
             }
         }

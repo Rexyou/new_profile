@@ -25,6 +25,8 @@
         justify-content: space-between;
         align-items: center;
         margin: 0px auto;
+        position: fixed;
+        z-index: 9999;
 
         .logo {
             width: 400px;
