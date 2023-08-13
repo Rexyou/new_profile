@@ -5,16 +5,17 @@
             <h1>REX YOU</h1>
         </div>
         <nav>
-            <RouterLink class="nav_link" to="/">Home</RouterLink>
-            <RouterLink class="nav_link" to="#" v-scroll-to="'#aboutme'">Portfolio</RouterLink>
-            <RouterLink class="nav_link" to="#" v-scroll-to="'#aboutme'">About</RouterLink>
-            <RouterLink class="nav_link" to="#" v-scroll-to="'#aboutme'">Contact Me</RouterLink>
+            <navbar-links />
         </nav>
+        <Slide class="burger_menu_div" width="200" right :closeOnNavigation="true">
+            <navbar-links />
+        </Slide>
     </header>
 </template>
 
 <script setup>
-
+    import { Slide } from 'vue3-burger-menu'
+    import NavbarLinks from './NavbarLinks.vue';
 </script>
 
 <style lang="scss" scoped>
@@ -25,8 +26,10 @@
         justify-content: space-between;
         align-items: center;
         margin: 0px auto;
-        position: fixed;
-        z-index: 9999;
+        position: sticky;
+        z-index: 20000;
+        top: 0;
+        background: black;
 
         .logo {
             width: 400px;
@@ -47,17 +50,41 @@
             }
         }
 
-        nav {
+        nav, 
+        .burger_menu_div {
             display: flex;
             justify-content: space-around;
             align-items: center;
             width: 40%;
             height: 100%;
+        }
 
-            .nav_link {
-                text-decoration: none;
-                font-size: 18px;
+        .burger_menu_div {
+            display: none;
+        }
+
+    }
+
+    @media only screen and (max-width: 768px) {
+        .burger_menu_div {
+            display: block !important;
+        }
+
+        nav {
+            display: none !important;
+        }
+    }
+
+    @media only screen and (max-width: 480px){
+        .logo {
+            width: 60% !important;
+
+            h1 {
+                font-size: 30px !important;
+                margin-left: 10px !important;
+                font-weight: 900 !important;
             }
         }
+
     }
 </style>

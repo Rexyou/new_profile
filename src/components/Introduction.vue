@@ -9,7 +9,8 @@
             <svg viewBox="0 0 250 180" xmlns="http://www.w3.org/2000/svg">
                 <path fill="#FF0066" d="M68.3,-25C74,-4.6,54.1,21.2,31.7,35.6C9.3,50,-15.6,52.9,-33.5,41.1C-51.3,29.4,-62,2.9,-55.3,-19C-48.5,-40.8,-24.3,-58,3.5,-59.2C31.3,-60.3,62.6,-45.4,68.3,-25Z" transform="translate(100 100)" />
             </svg>
-            <img src="https://assets.website-files.com/5e51c674258ffe10d286d30a/5e535aa1d871310896104715_peep-77.svg" alt="">
+            <!-- <img src="https://assets.website-files.com/5e51c674258ffe10d286d30a/5e535aa1d871310896104715_peep-77.svg" alt=""> -->
+            <img src="https://i.ibb.co/64Grsp3/rexyoufuye-home-1.png" alt="">
             <h1>Backend Developer</h1>
             <h5>Where Logic Meets Limitless Possibilities</h5>
         </div>
@@ -49,6 +50,7 @@
     .introduction {
         // border: 1px solid yellow;
         display: flex;
+        overflow: hidden;
 
         .social_media {
             width: 10%;
@@ -62,7 +64,7 @@
 
         .personal_profile {
             width: 90%;
-            height: 100vh;
+            height: 85vh;
             position: relative;
 
             svg {
@@ -71,30 +73,69 @@
             }
 
             img {
-                height: 500px;
+                height: 320px;
                 width: auto;
                 position: absolute;
                 left: 200px;
-                top: 220px;
+                top: 220px !important;
                 background: none;
             }
 
             h1 {
-                font-size: 90px;
+                font-size: 80px;
                 position: absolute;
-                top: 300px;
+                top: 230px;
                 left: 520px;
                 background: none;
             }
 
             h5 {
-                font-size: 35px;
+                font-size: 30px;
                 font-style: italic;
                 position: absolute;
-                top: 410px;
+                top: 340px;
                 left: 520px;
                 background: none;
             }
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        .introduction {
+
+            .social_media {
+                width: 25%;
+            }
+
+            .personal_profile{
+
+                width: 75%;
+                
+                svg {
+                    display: none;
+                }
+
+                img {
+                    top: 250px;
+                    height: 250px;
+                    left: 0px;
+                }
+
+                h1 {
+                    left: 0px;
+                    font-size: 45px;
+                    top: 10px;
+                }
+
+                h5 {
+                    left: 0;
+                    top: 150px;
+                    font-size: 15px;
+                }
+
+            }
+
+
         }
     }
 </style>
