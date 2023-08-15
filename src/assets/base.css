@@ -59,7 +59,7 @@ body::-webkit-scrollbar-thumb {
 .cross-style {
     position: absolute;
     top: 30px;
-    right: 30px;
+    right: 30px !important;
     cursor: pointer;
 }
 .bm-cross {
