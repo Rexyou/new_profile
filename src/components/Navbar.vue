@@ -7,8 +7,9 @@
         <nav>
             <navbar-links />
         </nav>
-        <Slide class="burger_menu_div" width="200" right :closeOnNavigation="true">
+        <Slide class="burger_menu_div" :width="window_width" right :closeOnNavigation="true"   @openMenu="handleOpenMenu" @closeMenu="handleCloseMenu">
             <navbar-links />
+            <img src="https://i.ibb.co/wsZ1Sqk/rexyoufu-nav-1.png" alt="">
         </Slide>
     </header>
 </template>
@@ -16,6 +17,17 @@
 <script setup>
     import { Slide } from 'vue3-burger-menu'
     import NavbarLinks from './NavbarLinks.vue';
+
+    const window_width = window.innerWidth;
+
+    const handleOpenMenu = () => {
+        console.log("open")
+    }
+
+    const handleCloseMenu = () => {
+        console.log("close")
+    }
+
 </script>
 
 <style lang="scss" scoped>
@@ -66,13 +78,33 @@
     }
 
     @media only screen and (max-width: 768px) {
-        .burger_menu_div {
-            display: block !important;
+
+        header {
+
+            .logo {
+                position: fixed;
+                left: 10px;
+                height: 15vh;
+            }
+
+            .burger_menu_div {
+                display: block !important;
+
+                img {
+                    position: absolute;
+                    right: 0px;
+                    bottom: 20px;
+                    height: 200px;
+                    width: auto;
+                }
+            }
+
+            nav {
+                display: none !important;
+            }
+
         }
 
-        nav {
-            display: none !important;
-        }
     }
 
     @media only screen and (max-width: 480px){

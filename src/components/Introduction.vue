@@ -77,7 +77,7 @@
                 width: auto;
                 position: absolute;
                 left: 200px;
-                top: 220px !important;
+                top: 220px;
                 background: none;
             }
 
@@ -116,7 +116,7 @@
                 }
 
                 img {
-                    top: 250px;
+                    top: 240px;
                     height: 250px;
                     left: 0px;
                 }
@@ -124,12 +124,13 @@
                 h1 {
                     left: 0px;
                     font-size: 45px;
-                    top: 10px;
+                    top: 50px;
+                    line-height: 45px;
                 }
 
                 h5 {
                     left: 0;
-                    top: 150px;
+                    top: 160px;
                     font-size: 15px;
                 }
 

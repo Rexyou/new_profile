@@ -30,6 +30,10 @@ body::-webkit-scrollbar-thumb {
     background-color: #FF0066;    /* color of the scroll thumb */
 }
 
+.body_overflow {
+    overflow: hidden;
+}
+
 /* Scrollbar end */
 
 /* Burger menu start */
@@ -44,7 +48,7 @@ body::-webkit-scrollbar-thumb {
     z-index: 10000;
 }
 .bm-burger-bars {
-    background-color: #FF0066 !important;
+    background-color: #FB2576 !important;
 }
 .line-style {
     position: absolute;
@@ -54,32 +58,33 @@ body::-webkit-scrollbar-thumb {
 }
 .cross-style {
     position: absolute;
-    top: 12px;
-    right: 2px;
+    top: 30px;
+    right: 30px;
     cursor: pointer;
 }
 .bm-cross {
     background: #bdc3c7;
+    height: 40px !important;
 }
 .bm-cross-button {
-    height: 24px;
-    width: 24px;
+    height: 30px;
+    width: 40px;
 }
 .bm-menu {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
-    z-index: 1000; /* Stay on top */
+    z-index: 100000; /* Stay on top */
     top: 0;
     left: 0;
-    background-color: #FF0066 !important; /* Black*/
+    background-color: #FB2576 !important; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /*0.5 second transition effect to slide in the sidenav*/
 }
 
 .bm-overlay {
-    background: transparent;
+    background: rgba(0, 0, 0, 1) !important;
 }
 .bm-item-list {
     color: #b8b7ad;
