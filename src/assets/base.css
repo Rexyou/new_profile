@@ -74,7 +74,7 @@ body::-webkit-scrollbar-thumb {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
-    z-index: 100000; /* Stay on top */
+    z-index: 100000 !important; /* Stay on top */
     top: 0;
     left: 0;
     background-color: #FB2576 !important; /* Black*/
