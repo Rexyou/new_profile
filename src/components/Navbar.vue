@@ -84,7 +84,9 @@
             .logo {
                 position: fixed;
                 left: 10px;
+                top: 30px;
                 height: 15vh;
+                align-items: normal;
             }
 
             .burger_menu_div {
