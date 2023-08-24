@@ -123,7 +123,7 @@
 
                 h1 {
                     left: 0px;
-                    font-size: 45px;
+                    font-size: 35px;
                     top: 50px;
                     line-height: 45px;
                 }
@@ -131,7 +131,7 @@
                 h5 {
                     left: 0;
                     top: 160px;
-                    font-size: 15px;
+                    font-size: 14px;
                 }
 
             }

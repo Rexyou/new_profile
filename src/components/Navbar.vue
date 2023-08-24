@@ -19,14 +19,14 @@
     import { ref } from 'vue'
     import NavbarLinks from './NavbarLinks.vue';
 
-    const window_width = window.width;
+    const window_width = window.innerWidth;;
 
     const handleOpenMenu = () => {
-        console.log("open")
+        document.body.style.overflow = 'hidden';
     }
 
     const handleCloseMenu = () => {
-        console.log("close")
+        document.body.style.overflow = 'auto';
     }
 
 </script>
@@ -76,6 +76,14 @@
             display: none;
         }
 
+    }
+
+    .full_screen {
+        width: 100vw;
+    }
+
+    .close_screen {
+        width: 0;
     }
 
     @media only screen and (max-width: 768px) {
