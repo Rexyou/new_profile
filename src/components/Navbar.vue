@@ -16,9 +16,10 @@
 
 <script setup>
     import { Slide } from 'vue3-burger-menu'
+    import { ref } from 'vue'
     import NavbarLinks from './NavbarLinks.vue';
 
-    const window_width = window.innerWidth;
+    const window_width = window.width;
 
     const handleOpenMenu = () => {
         console.log("open")

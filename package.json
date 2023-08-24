@@ -10,6 +10,7 @@
   "dependencies": {
     "oh-vue-icons": "^1.0.0-rc3",
     "vue": "^3.3.4",
+    "vue-collapsed": "^1.2.7",
     "vue-router": "^4.2.2",
     "vue-scrollto": "^2.20.0",
     "vue3-burger-menu": "^1.1.1"

@@ -1,7 +1,7 @@
 !<template>
     <RouterLink class="nav_link" to="/" v-scroll-to="{el:'#introduction', offset: -200, easing: 'linear',}">Home</RouterLink>
-    <RouterLink class="nav_link" to="#" v-scroll-to="'#aboutme'">Portfolio</RouterLink>
     <RouterLink class="nav_link" to="#" v-scroll-to="'#aboutme'">About</RouterLink>
+    <RouterLink class="nav_link" to="#" v-scroll-to="'#aboutme'">Portfolio</RouterLink>
     <RouterLink class="nav_link" to="#" v-scroll-to="'#aboutme'">Contact Me</RouterLink>
 </template>
 

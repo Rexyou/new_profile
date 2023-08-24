@@ -29,6 +29,8 @@ npm run build
 ```
 
 ### Installed library
-1.  npm install -D sass-loader sass
-2.  npm install --save vue-scrollto
+1. npm install -D sass-loader sass
+2. npm install --save vue-scrollto
 3. npm install oh-vue-icons
+4. npm i -S vue-collapsed
+5. 
