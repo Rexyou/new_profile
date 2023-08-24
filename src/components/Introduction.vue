@@ -123,7 +123,7 @@
 
                 h1 {
                     left: 0px;
-                    font-size: 35px;
+                    font-size: 45px;
                     top: 50px;
                     line-height: 45px;
                 }
