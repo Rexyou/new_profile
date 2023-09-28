@@ -115,9 +115,8 @@
             border-left: 2px solid #FB2576;
             display: flex;
             flex-wrap: wrap;
-            width: 50%;
+            width: 40%;
             margin: 0 50%;
-            background-color: milk;
         }
 
         .list-items {
