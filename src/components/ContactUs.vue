@@ -64,7 +64,8 @@
 
         const result = await v$.value.$validate();
         if(result){
-            emailjs.send("service_ki0osis","template_zwh0l5p",form,"i9Wg4UtnBvX5EBuvQ")
+            console.log(import.meta.env.VITE_PUBLIC_ID)
+            emailjs.send(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, form, import.meta.env.VITE_PUBLIC_ID)
             .then((response)=>{
 
                 if(response.status == 200){
