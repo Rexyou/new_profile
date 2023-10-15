@@ -33,4 +33,4 @@ npm run build
 2. npm install --save vue-scrollto
 3. npm install oh-vue-icons
 4. npm i -S vue-collapsed
-5. 
+5. npm install @vuelidate/core @vuelidate/validators

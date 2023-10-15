@@ -111,3 +111,18 @@ body::-webkit-scrollbar-thumb {
 
 }
 /* Responsive end */
+
+/* Sweet alert start */
+.my-swal {
+    z-index: 99999;
+}
+
+.my-swal .swal2-title {
+    font-size: 25px;
+    color: black;
+}
+
+.my-swal .swal2-actions button {
+    font-size: 18px;
+}
+/* Sweet alert end */
