@@ -11,8 +11,10 @@
             </svg>
             <!-- <img src="https://assets.website-files.com/5e51c674258ffe10d286d30a/5e535aa1d871310896104715_peep-77.svg" alt=""> -->
             <img src="https://i.ibb.co/64Grsp3/rexyoufuye-home-1.png" alt="">
-            <h1>Backend Developer</h1>
-            <h5>Where Logic Meets Limitless Possibilities</h5>
+            <div class="main_title">
+                <h1>Backend Developer</h1>
+                <h5>Where Logic Meets Limitless Possibilities</h5>
+            </div>
         </div>
     </div>
 </template>
@@ -81,22 +83,21 @@
                 background: none;
             }
 
-            h1 {
-                font-size: 80px;
+            .main_title {
                 position: absolute;
-                top: 230px;
-                left: 520px;
-                background: none;
+                font-size: 30px;
+                top: 240px;
+                left: 540px;
+                width: 100%;
+                line-height: 65px;
+                word-wrap: break-word;
+
+                h5 {
+                    font-size: 25px;
+                    font-style: italic;
+                }
             }
 
-            h5 {
-                font-size: 30px;
-                font-style: italic;
-                position: absolute;
-                top: 340px;
-                left: 520px;
-                background: none;
-            }
         }
     }
 
@@ -121,17 +122,16 @@
                     left: 0px;
                 }
 
-                h1 {
-                    left: 0px;
-                    font-size: 45px;
-                    top: 50px;
-                    line-height: 45px;
-                }
-
-                h5 {
+                .main_title {
                     left: 0;
-                    top: 160px;
-                    font-size: 14px;
+                    top: 50px;
+                    font-size: 20px;
+                    line-height: 45px;
+
+                    h5 {
+                        font-size: 12px;
+                    }
+
                 }
 
             }
