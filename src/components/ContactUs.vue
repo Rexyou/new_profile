@@ -60,30 +60,38 @@
 
         document.getElementById("overlay").style.display = "block";
 
-        if(form.from_name == '' || form.reply_to == '' || form.message == ''){
+        if(form.from_name === '' || form.reply_to === '' || form.message === ''){
             document.getElementById("overlay").style.display = "none";
             return Swal.fire("Input cannot be empty")
         }
 
         const result = await v$.value.$validate();
+        console.log("result: ", result)
         if(result){
             emailjs.send(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, form, import.meta.env.VITE_PUBLIC_ID)
             .then((response)=>{
 
                 document.getElementById("overlay").style.display = "none";
 
-                if(response.status == 200){
-                    Swal.fire("Message has been successfully send!")
+                if(response.status !== 200){
+                    return Swal.fire(response.text)
+                }
+
+                Swal.fire("Message has been successfully send!")
                     form.from_name = ''
                     form.reply_to = ''
                     form.message = ''
                     return v$.value.$reset()
-                }
-                else {
-                    Swal.fire(response.text)
-                }
 
+            })
+            .catch((error)=> {
+                document.getElementById("overlay").style.display = "none";
+                console.log("error: ", error); 
+                return Swal.fire("API error. Please try again later.") 
             });
+        }
+        else {
+            document.getElementById("overlay").style.display = "none";
         }
     }
 
